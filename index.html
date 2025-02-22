@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AICRAL25</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+
+      .w3-bar {font-family: "Montserrat", sans-serif}
+
+      .headerimage {
+        background-position: center;
+        background-size: cover;
+        background-image: url("./images/banner.jpg");
+        min-height: 100%;    
+      }
+
+      ul {
+        list-style-type: circle;
+      }
+
+      ol {
+        list-style-type: lower-alpha;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" id="home" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Home</a>    
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Program</a>
+        <a href="#" id="registration" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a>        
+        <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-padding-large ">About<i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="#" id="keynotes" class="w3-bar-item w3-button">Keynotes</a>
+          <a href="#" id="location" class="w3-bar-item w3-button">Location</a>
+          <a href="#" id="accomodation" class="w3-bar-item w3-button">Accomodation</a>
+          <a href="#" id="places" class="w3-bar-item w3-button">Places of interest</a>
+        </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-padding-large">Submissions<i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="#" id="cfp" class="w3-bar-item w3-button">Call for papers</a>
+          <a href="#" id="submissionguide" class="w3-bar-item w3-button">Submission guidelines</a>
+          <a href="#" id="submitabstract" class="w3-bar-item w3-button">Submit abstract</a>
+        </div>
+        </div>    
+        <a href="#" id="dates" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Important Dates</a>
+        <a href="#" id="committee" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organizing Committee</a>
+        <a href="#" id="contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" id="home-sm" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Conference Program</a>    
+        <a href="#" id="registration-sm" class="w3-bar-item w3-button w3-padding-large">Registration</a>    
+        <a href="#" id="keynotes-sm" class="w3-bar-item w3-button w3-padding-large">Keynotes</a>
+        <a href="#" id="location-sm" class="w3-bar-item w3-button w3-padding-large">Location</a>
+        <a href="#" id="accomodation-sm" class="w3-bar-item w3-button w3-padding-large">Accomodation</a>
+        <a href="#" id="places-sm" class="w3-bar-item w3-button w3-padding-large">Places of interest</a>
+        <a href="#" id="cfp-sm" class="w3-bar-item w3-button w3-padding-large">Call for papers</a>
+        <a href="#" id="submissionguide-sm" class="w3-bar-item w3-button w3-padding-large">Submission guidelines</a>
+        <a href="#" id="submitabstract-sm" class="w3-bar-item w3-button w3-padding-large">Submit abstract</a>
+        <a href="#" id="dates-sm" class="w3-bar-item w3-button w3-padding-large">Important Dates</a>
+        <a href="#" id="committee-sm" class="w3-bar-item w3-button w3-padding-large">Organizing Committee</a>
+        <a href="#" id="contact-sm" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container headerimage">
+      <div class="w3-text-white" style="padding-top:10em;padding-bottom:10em;padding-left:1em;">    
+        <span class="w3-jumbo w3-hide-small">AICRAL '25</span>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">AICRAL '25</span>
+      </div>
+    </header>
+
+
+    <!-- Content -->
+    <div class="w3-container w3-padding-32">
+      <div class="w3-content" id="content">
+        
+      </div>  
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-8 w3-center w3-opacity">  
+      <div class="w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </footer>
+
+    <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      var links = {"#keynotes" : "./keynotes.html",
+                  "#location" : "./location.html",
+                  "#accomodation" : "./accomodation.html",
+                  "#places" : "./places.html",
+                  "#registration" : "./registration.html",
+                  "#cfp" : "./cfp.html",
+                  "#submissionguide" : "./submissionguide.html",
+                  "#submitabstract" : "./submitabstract.html",
+                  "#committee" : "./committee.html",
+                  "#contact" : "./contact.html",
+                  "#home" : "./home.html",
+                  "#keynotes-sm" : "./keynotes.html",
+                  "#location-sm" : "./location.html",
+                  "#accomodation-sm" : "./accomodation.html",
+                  "#places-sm" : "./places.html",
+                  "#registration-sm" : "./registration.html",
+                  "#cfp-sm" : "./cfp.html",
+                  "#submissionguide-sm" : "./submissionguide.html",
+                  "#submitabstract-sm" : "./submitabstract.html",
+                  "#committee-sm" : "./committee.html",
+                  "#contact-sm" : "./contact.html",
+                  "#home-sm" : "./home.html",};
+
+      for (id in links){  
+        $( id ).on( "click", function( event ) {      
+            $("#content").load(links["#"+event.target.id]);
+        });
+      }
+
+      $("#content").load("./home.html");
+    </script>
+
+  </body>
+</html>
