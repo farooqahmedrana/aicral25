@@ -38,7 +38,7 @@
       <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" id="home" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Home</a>    
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Program</a>
+        <a href="#" id="program" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Program</a>
         <a href="#" id="registration" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a>        
         <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-button w3-padding-large ">About<i class="fa fa-caret-down"></i></button>     
@@ -65,7 +65,7 @@
       <!-- Navbar on small screens -->
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
         <a href="#" id="home-sm" class="w3-bar-item w3-button w3-padding-large">Home</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Conference Program</a>    
+        <a href="#" id="program-sm" class="w3-bar-item w3-button w3-padding-large">Conference Program</a>    
         <a href="#" id="registration-sm" class="w3-bar-item w3-button w3-padding-large">Registration</a>    
         <a href="#" id="keynotes-sm" class="w3-bar-item w3-button w3-padding-large">Keynotes</a>
         <a href="#" id="location-sm" class="w3-bar-item w3-button w3-padding-large">Location</a>
@@ -119,7 +119,9 @@
         }
       }
 
-      var links = {"#keynotes" : "./keynotes.html",
+      var links = {
+                  "#program" : "./program.html",
+                  "#keynotes" : "./keynotes.html",
                   "#location" : "./location.html",
                   "#accomodation" : "./accomodation.html",
                   "#places" : "./places.html",
@@ -130,6 +132,8 @@
                   "#committee" : "./committee.html",
                   "#contact" : "./contact.html",
                   "#home" : "./home.html",
+                  "#dates" : "./dates.html",
+                  "#program-sm" : "./program.html",
                   "#keynotes-sm" : "./keynotes.html",
                   "#location-sm" : "./location.html",
                   "#accomodation-sm" : "./accomodation.html",
@@ -140,7 +144,8 @@
                   "#submitabstract-sm" : "./submitabstract.html",
                   "#committee-sm" : "./committee.html",
                   "#contact-sm" : "./contact.html",
-                  "#home-sm" : "./home.html",};
+                  "#home-sm" : "./home.html",
+                  "#dates-sm" : "./dates.html"};
 
       for (id in links){  
         $( id ).on( "click", function( event ) {      
