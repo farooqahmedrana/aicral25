@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}      
 
-      .w3-bar {font-family: "Montserrat", sans-serif}
+      .w3-bar {font-family: "Montserrat", sans-serif;}      
 
       .headerimage {
         background-position: center;
         background-size: 100%;        
         background-repeat: no-repeat;
         background-image: url("./images/banner-updated.jpeg");
-        min-height: 100%;    
+        min-height: 100%;        
       }
 
       ul {
@@ -37,10 +37,10 @@
     <!-- Navbar -->
     <div class="w3-top">
       <div class="w3-bar w3-light-grey w3-card w3-left-align">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" id="home" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Home</a>    
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" id="home" class="w3-bar-item w3-button w3-hide-small w3-white">Home</a>    
         <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button w3-padding-large ">About AICRAL 25<i class="fa fa-caret-down"></i></button>     
+          <button class="w3-button">About AICRAL 25<i class="fa fa-caret-down"></i></button>     
           <div class="w3-dropdown-content w3-card-4 w3-bar-block">
             <a href="#" id="aboutus" class="w3-bar-item w3-button">About Us</a>
             <a href="#" id="theme" class="w3-bar-item w3-button">Conference Theme</a>
@@ -48,38 +48,38 @@
             <a href="#" id="committee" class="w3-bar-item w3-button">Organizing Committee</a>
           </div>
         </div>
-        <a href="#" id="keynotes" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Keynote Speakers</a>
+        <a href="#" id="keynotes" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Keynote Speakers</a>
         <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button w3-padding-large"><a href="#" id="cfp" style="text-decoration: none;" >Call For Papers<i class="fa fa-caret-down"></i></a></button>
+          <button class="w3-button"><a href="#" id="cfp" style="text-decoration: none;" >Call For Papers<i class="fa fa-caret-down"></i></a></button>
           <div class="w3-dropdown-content w3-card-4 w3-bar-block">            
             <a href="#" id="submissionguide" class="w3-bar-item w3-button">Abstract Submission Guidelines</a>
             <a href="#" id="posterguide" class="w3-bar-item w3-button">Poster Presentation Guidelines</a>
           </div>
         </div>
-        <a href="#" id="dates" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Important Dates</a>
+        <a href="#" id="dates" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Important Dates</a>
         <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button w3-padding-large"><a href="#" id="registration" style="text-decoration: none;" >Registration<i class="fa fa-caret-down"></i></a></button>
+          <button class="w3-button"><a href="#" id="registration" style="text-decoration: none;" >Registration<i class="fa fa-caret-down"></i></a></button>
           <div class="w3-dropdown-content w3-card-4 w3-bar-block">            
             <a href="#" id="registrationform" class="w3-bar-item w3-button">Registration Form</a>
             <a href="#" id="registrationcost" class="w3-bar-item w3-button">Registration Costs</a>
           </div>
         </div>
         <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button w3-padding-large">Venue<i class="fa fa-caret-down"></i></button>     
+          <button class="w3-button">Venue<i class="fa fa-caret-down"></i></button>     
           <div class="w3-dropdown-content w3-card-4 w3-bar-block">            
             <a href="#" id="location" class="w3-bar-item w3-button">Location</a>
             <a href="#" id="accomodation" class="w3-bar-item w3-button">Accomodation</a>
             <a href="#" id="places" class="w3-bar-item w3-button">Places Of interest</a>
           </div>
         </div>
-        <a href="#" id="contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+        <a href="#" id="contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact Us</a>
       </div>
 
       <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="overflow-y: scroll !important;">
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="overflow-y:scroll;line-height:1.1">
         <a href="#" id="home-sm" class="w3-bar-item w3-button">Home</a>
-        <a href="#" id="aboutus-sm" class="w3-bar-item w3-button ">About AICRAL 25</a>
-        <a href="#" id="theme-sm" class="w3-bar-item w3-button ">Conference Theme</a>
+        <a href="#" id="aboutus-sm" class="w3-bar-item w3-button">About AICRAL 25</a>
+        <a href="#" id="theme-sm" class="w3-bar-item w3-button">Conference Theme</a>
         <a href="#" id="program-sm" class="w3-bar-item w3-button">Conference Program</a>
         <a href="#" id="committee-sm" class="w3-bar-item w3-button">Organizing Committee</a>    
         <a href="#" id="keynotes-sm" class="w3-bar-item w3-button">Keynote Speakers</a>
@@ -98,9 +98,9 @@
     </div>
 
     <!-- Header -->
-    <header class="w3-display-container  headerimage">      
-      <div class="w3-text-white w3-hide-small" style="padding-top:12em;padding-bottom:12em;"></div>
-      <div class="w3-text-white w3-hide-large w3-hide-medium" style="padding-top:1em;padding-bottom:10em;"></div>
+    <header class="w3-display-container headerimage">            
+      <div class="w3-text-white w3-hide-small" style="margin-top:1em; height:350px"></div>
+      <div class="w3-text-white w3-hide-large w3-hide-medium" style="margin-top:1em;padding-bottom:10em;"></div>
     </header>
     
 
@@ -172,7 +172,14 @@
 
       for (id in links){  
         $( id ).on( "click", function( event ) {      
+            // load content
             $("#content").load(links["#"+event.target.id]);
+            
+            // close nav menu
+            if (event.target.id.indexOf("-sm") != -1){
+              var x = document.getElementById("navDemo");
+              x.className = x.className.replace(" w3-show", "");
+          }
         });
       }
 
